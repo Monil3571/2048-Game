@@ -18,7 +18,9 @@ hr{
     display: flex;
     flex-wrap: wrap;
 }
-
+div,#heading{
+    transition: 0.2s ease-in-out;
+}
 .tile{
     width: 90px;
     height: 90px;
@@ -30,6 +32,27 @@ hr{
     align-items: center;
 }
 
+
+#Reset{
+    /* opacity: 0; */
+    margin: 30px;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #fe3d3d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+.fadeOut{
+    opacity: 0;
+    pointer-events: none
+}
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
 .x2{
     background-color: #eee4da;
     color: #727371;
